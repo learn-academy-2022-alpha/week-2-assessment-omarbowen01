@@ -10,7 +10,7 @@
 // var cohort = "Alpha 2022"
 // console.log(cohort.split(""))
 
-// a) Your answer: "A", "l", "p", "h", "a", "", "2", "0", "2", "2"
+// a) Your answer: ["A", "l", "p", "h", "a", "", "2", "0", "2", "2"]
 // b) Verify and explain: This is true because the split method with the quotes covert the string into an array with each index in quotations. This
 
 
@@ -22,7 +22,7 @@
 // console.log(greeter("LEARN Student"))
 // //
 // // // a) Your answer: Hello, LEARN Student
-// // // b) Verify and explain: The answer is undefined because name isn't defined as a parameter.
+// // // b) Verify and explain: The answer is undefined because theres no return in the function.
 // //
 // //
 // // // --------------------3) What will this log?
@@ -40,7 +40,7 @@
 // console.log(onlyOdds)
 //
 // // a) Your answer: [11, 13, 15]
-// // b) Verify and explain: The answer is as such because the function is an onlyOdds function with the filter iterated through the array to show that it satisfied the given condtions.
+// // b) Verify and explain: The answer is as such because the var onlyOdds is ran with the filter function to iterate through the values that aren't divisble by two and output only the odd numbers.
 //
 //
 // // --------------------5) What will this log?
@@ -59,15 +59,15 @@
 //
 // // --------------------STRETCH: What will this log?
 //
-// class Learn {
-//   constructor(name){
-//     this.student = name,
-//     this.cohort = "Alpha",
-//     this.year = 2022
-//   }
-// }
-// var learnStudent = new Learn("George")
-// console.log(learnStudent)
+class Learn {
+  constructor(name){
+    this.student = name,
+    this.cohort = "Alpha",
+    this.year = 2022
+  }
+}
+var learnStudent = new Learn("George")
+console.log(learnStudent)
 
-// a) Your answer:
-// b) Verify and explain:
+// a) Your answer: "George", "Alpha", "2022"
+// b) Verify and explain:  Output is:  Learn { student: 'George', cohort: 'Alpha', year: 2022 } because that's how the class is set up with the constructor and this statements.
